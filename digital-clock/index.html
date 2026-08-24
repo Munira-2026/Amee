@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Global Digital Clock</h1>
+        <p class="subtitle">Current time across different time zones</p>
+        
+        <div class="clocks-grid">
+            <div class="clock-card">
+                <div class="timezone-name">🗽 New York (EST)</div>
+                <div class="clock-display" id="nyc-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC -5</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇬🇧 London (GMT)</div>
+                <div class="clock-display" id="london-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +0</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇮🇳 India (IST)</div>
+                <div class="clock-display" id="india-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +5:30</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇮🇸 Iceland (GMT)</div>
+                <div class="clock-display" id="iceland-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +0</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇯🇵 Tokyo (JST)</div>
+                <div class="clock-display" id="tokyo-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +9</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇦🇺 Sydney (AEDT)</div>
+                <div class="clock-display" id="sydney-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +11</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇩🇪 Berlin (CET)</div>
+                <div class="clock-display" id="berlin-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +1</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇦🇪 Dubai (GST)</div>
+                <div class="clock-display" id="dubai-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC +4</div>
+            </div>
+
+            <div class="clock-card">
+                <div class="timezone-name">🇧🇷 São Paulo (BRT)</div>
+                <div class="clock-display" id="sao-paulo-clock">--:--:-- --</div>
+                <div class="timezone-info">UTC -3</div>
+            </div>
+        </div>
+
+        <div class="local-time">
+            <h2>Your Local Time</h2>
+            <div class="local-clock" id="local-clock">--:--:-- --</div>
+            <div class="local-date" id="local-date">Loading...</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
